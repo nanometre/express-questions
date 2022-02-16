@@ -6,21 +6,21 @@ var helpers = require('handlebars-helpers')({
 const path = require('path');
 let app = express();
 
-app.set('view engine', hbs);
-app.set('views', path.join(__dirname, '/views'));
-app.use(express.static(path.join(__dirname, '/public')));
+app.set('view engine', 'hbs');
+// app.set('views', path.join(__dirname, '/views'));
+// app.use(express.static(path.join(__dirname, '/public')));
 
 // YOUR CODE HERE
 app.use(express.static('resources'));
 
 app.get('/welcome/:image_no', function (req, res) {
-  let image = parseInt(req.params.image_no);
+  let image_no = parseInt(req.params.image_no);
   let file_name = '';
-  if (image == 1) {
+  if (image_no == 1) {
     file_name = 'apple.jpg';
-  } else if (image == 2) {
+  } else if (image_no == 2) {
     file_name = 'banana.jpg';
-  } else if (image == 3) {
+  } else if (image_no == 3) {
     file_name = 'cherry.jpg';
   } else {
     file_name = 'meatball.jpg';

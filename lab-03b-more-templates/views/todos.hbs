@@ -12,9 +12,9 @@
 <body>
     <div>
         <ul>
-            <li>{{item1}}</li>
-            <li>{{item2}}</li>
-            <li>{{item3}}</li>
+            {{#each todos}}
+                <li>{{this}}</li>
+            {{/each}}
         </ul>
     </div>
 </body>

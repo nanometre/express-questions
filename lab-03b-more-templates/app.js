@@ -40,9 +40,7 @@ app.get('/todos', function (req, res) {
   ];
 
   res.render('todos.hbs', {
-    item1:todos[0],
-    item2:todos[1],
-    item3:todos[2],
+    todos: todos,
   })
 })
 

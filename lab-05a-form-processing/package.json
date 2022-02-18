@@ -1,0 +1,14 @@
+{
+  "name": "lab-05a-form-processing",
+  "version": "1.0.0",
+  "description": "1. Duplicate the `app_template.js` and rename it as `app.js`.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
